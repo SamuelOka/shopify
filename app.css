@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-size: 12px;
+    font-weight: 500;
+
+}
+body{
+    background: #f1f1f1;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    background: #1A1A1A;
+    width:  100%;
+    height: 56px;
+    padding: 12px, 16px, 12px, 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    align-items: center;
+    padding: 0px, 0px, 0px, 0px;
+    width: Fill (464px);
+    height: Hug (30px);
+    gap: 7.52px;
+    margin-left: 1rem;
+}
+.search-area{
+    position: relative;
+    align-self: center;
+    overflow: hidden;
+    width: 480px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px;
+    margin-left: 6px;
+    border: 1px solid #616161;
+    background: #303030;
+    transition: 0.5s;
+}
+.search-area img{
+    position: relative;
+    align-self: center;
+    filter: invert(100%); 
+    width: 20px;
+    height: 20px;
+    bottom: 3px;
+}
+.search-area input{
+    background: transparent;
+    align-self: center;
+    position: relative;
+    bottom: 7.5px;
+    padding-left: 4px;
+    height: 20px;
+    width: fit-content;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+.search-area input:focus{
+    border: none;
+    outline: none;
+}
+.search-area:hover{
+    border: 1px solid #E1E1E1;
+}
+.search-area:focus{
+    border: 2px solid #fff;
+}
+
+.profile{
+    display: flex;
+    position: relative;
+    align-self: center;
+    height: 32px;
+    gap: 8px;
+    transition: 0.5s;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.profile-menu{
+    display: flex;
+    border: 1px solid #1A1A1A;
+    background: #303030;
+    width: Hug (142px) ;
+    height: Hug (32px) ;
+    padding: 2px 8px;
+    border-radius: 8px ;
+    gap: 8px;
+    transition: 0.5s;
+}
+.notification{
+    padding: 2px 6px;
+    border: 1px solid #1A1A1A;
+    background: #303030;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+} 
+.notification img{
+    filter: invert(100%);
+}
+
+.profile-menu:hover{
+    background: #616161;
+}
+.profile-menu:active{
+    border: 2px solid #005BD3;
+}
+.notification:active{
+    border: 2px solid #005BD3;
+}
+.profile .username{
+    color: #fff;
+    align-self: center;
+}
+
+.profile-img{
+    size: 12px;
+    text-align: center;
+    padding: 5.5px;
+    font-weight: 600;
+    color: #616161;
+    background: #36FBA1;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    align-self: center;
+}
+.small-image{
+    display: none;
+}
+/* -------- toggle --------- */
+.hidden{
+    display: none;
+}
+.alert_dropdown{
+    width: Hug (24rem) ;
+    height: Hug (7.2rem) ;
+    position: absolute;
+    top: 4rem ;
+    left: 65rem ;
+    padding: 1rem;
+    border-radius: 1rem ;
+    border: 1px solid #DBDBDB ;
+    gap: 1rem;
+    background: #ffff;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+    z-index: 1;
+}
+.alert_dropdown img{
+    filter: invert();
+
+}
+.alert-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.alert-top p{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+}
+.alert-text{
+    width: Hug (11rem); 
+    height: Hug (1.5rem) ;
+    padding: 1rem ;
+    gap: 8px;
+    background: #f1f1f1;
+}
+.davii{
+    width: 20rem;
+    height: 24rem;
+    background: #fff;
+    position: absolute;
+    top: 4rem ;
+    left: 65rem ;
+    padding: 1rem;
+    border-radius: 1rem ;
+    gap: 0.25rem;
+    padding: 0.4rem 0;
+    border: 1px solid #E1E1E1;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.store{
+    padding: 0.5rem;
+    align-items: center;
+}
+.store p{
+    font-size: 0.8rem;
+}
+
+.davii hr{
+    margin: 0.5rem 0;
+}
+.list, .gmail{
+    padding: 0.5rem;
+    height: 2rem;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0.5rem;
+    align-items: center;
+    border: none;
+}
+.list:hover{
+    border-radius: 0.5rem;
+    background: #DBDBDB;
+}
+.gmail p{
+    font-size: 13px;
+}
+.first{
+    display: flex;
+    width: Fill (19.25rem); 
+    height: Hug (2.25rem); 
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    background: #F1F1F1;
+    gap: 0.5rem;
+}
+.first h5{
+    size: 12px;
+    text-align: center;
+    padding: 5.5px;
+    font-weight: 600;
+    color: #616161;
+    background: #36FBA1;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    align-self: center;
+}
+.first p{
+    color: #303030;
+    align-self: center;
+    text-align: left;
+}
+
+.plan{
+    display: flex;
+    background: #1A1A1A;
+    margin-top: 1rem;
+    width: 50rem;
+    height: 3.5rem ;
+    padding: 12px 18px;
+    margin: 1rem auto;
+    justify-content: space-between;
+    border: 1px solid #1A1A1A;
+    border-radius: 8px;
+    align-items: center;
+}
+.plan p{
+    font-size: 13px;
+    color: #fff;
+    gap: 15rem;
+}
+.plan img{
+    filter: invert();
+}
+.btn{
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}
+.start{
+    width: 376px;
+}
+.start h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.container{
+    width: 800px;
+    height: fit-content;
+    background: #fff;
+    margin: 1rem auto;
+    padding: 8px;
+}
+.container p{
+    font-size: 13px;
+}
+.container h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.progress{
+    display: flex;
+    align-items: center;
+
+}
+.progress p{
+    font-weight: 400;
+    font-size: 12px;
+    margin-right: 8px;
+}
+.line{
+    width: 72px;
+    height: 4px;
+    background: #E3E3E3;
+    border-radius: 24px;
+}
+.line hr{
+    width: 18px;
+    height: 100%;
+    background: #1A1A1A;
+    border: none;
+    border-radius: 24px;
+} 
+
+
+
+
+/* ---------- media query ---------- */
+@media screen and (max-width:600px) {
+    .small-image{
+        display: block;
+    }
+    .big-image{
+        display: none;
+    }
+    .username{
+        display: none;
+    }
+    .search-area{
+        width: 238px;
+        height: 32px;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px;
+        gap: 6px;
+    }
+    .plan{
+        display: block;
+        width: 100%;
+        height: 104px;
+        margin-top: 1rem;
+    }
+    .plan p{
+        padding-right: 0;
+    }
+    .plan button{
+        margin-top: 1rem;
+    }
+}
